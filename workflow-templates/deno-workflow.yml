@@ -1,0 +1,21 @@
+name: QuackWare Deno Workflow
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches: [$default-branch]
+
+jobs:
+  run-deno-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Run Deno
+        run: deno ${{ env.DENO_COMMAND_STRING }}
