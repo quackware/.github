@@ -1,4 +1,4 @@
-name: QuackWare Deno Workflow
+name: Deno Workflow
 
 on:
   push:

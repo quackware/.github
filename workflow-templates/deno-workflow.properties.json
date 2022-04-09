@@ -1,6 +1,6 @@
 {
-  "name": "QuackWare Deno Workflow",
-  "description": "QuackWare Deno Workflow",
+  "name": "Deno Workflow",
+  "description": "Deno Workflow",
   "categories": ["TypeScript"],
   "filePatterns": ["deno.jsonc?", "mod.ts$"]
 }
